@@ -19,13 +19,16 @@ body {
   border-radius: 5px;
   width: 870px;
   margin-top: 36px;
-  padding: 40px 83px 30px 30px;
+  padding-right: 33px;
+  padding-top: 40px;
+  padding-left: 30px;
 }
 
 .section-title {
   color: #562eff;
   font-size: 24px;
   margin-top: 0px;
+  margin-bottom: 30px;
 }
 
 hr {
@@ -79,6 +82,7 @@ hr {
   display: grid;
   grid-row-gap: 29px;
   grid-template-columns: repeat(3, 1fr);
+  margin-top: 11px;
 }
 
 .player {
@@ -94,4 +98,38 @@ hr {
   font-weight: 400;
   font-size: 18px;
   margin-left: 16px;
+}
+
+/* top blogs styles  */
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 26px;
+}
+.blog {
+  display: flex;
+}
+
+.blog-thumbnail img {
+  width: 224px;
+  height: 127px;
+}
+
+.blog-info {
+  margin-left: 16px;
+}
+
+.blog-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.blog-info p,
+.author {
+  font-size: 16px;
+  color: #9f9f9f;
+}
+.author {
+  text-decoration: none;
+  color: #562eff;
 }
