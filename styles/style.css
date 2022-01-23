@@ -193,3 +193,37 @@ hr {
   border-radius: 14.6913px;
   padding: 4px 6px;
 }
+
+/* media queries  */
+
+@media only screen and (max-width: 688px) {
+  /* responsive nav-bar  */
+  .nav-container,
+  .logo a,
+  .nav-items {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-items a {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .logo a,
+  .logo-text {
+    display: inline-block;
+    padding: 5px;
+    margin-left: 10px;
+  }
+
+  .logo-text {
+    margin-left: 3px;
+  }
+
+  .top-section,
+  .bottom-section {
+    display: none;
+  }
+}
