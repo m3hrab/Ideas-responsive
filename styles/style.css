@@ -146,6 +146,7 @@ hr {
 }
 
 .course {
+  /* height: 270px; */
   padding: 13px;
   background-color: #fff;
   filter: drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05));
@@ -224,10 +225,12 @@ hr {
   }
 
   /* Responsive top player section  */
-  .top-section {
+  .top-section,
+  .bottom-section {
     width: 100%;
   }
-  .top-section {
+  .top-section,
+  .bottom-section {
     padding: 0;
     margin: 0;
     padding-top: 20px;
@@ -246,8 +249,21 @@ hr {
     text-align: center;
   }
 
-  .top-blogs,
-  .bottom-section {
-    display: none;
+  .blogs,
+  .courses {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  .blog,
+  .course {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .blog {
+    width: 400px;
+  }
+  .course {
+    width: 253px;
+    margin-bottom: 20px;
   }
 }
