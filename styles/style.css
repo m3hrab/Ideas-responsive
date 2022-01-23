@@ -198,6 +198,7 @@ hr {
 
 @media only screen and (max-width: 688px) {
   /* responsive nav-bar  */
+
   .nav-container,
   .logo a,
   .nav-items {
@@ -222,7 +223,30 @@ hr {
     margin-left: 3px;
   }
 
-  .top-section,
+  /* Responsive top player section  */
+  .top-section {
+    width: 100%;
+  }
+  .top-section {
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+  .players {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  .player {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-title {
+    text-align: center;
+  }
+
+  .top-blogs,
   .bottom-section {
     display: none;
   }
